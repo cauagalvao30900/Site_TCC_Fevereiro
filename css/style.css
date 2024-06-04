@@ -1,0 +1,274 @@
+/* Adicionei algumas alterações e ajustes necessários no CSS */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  max-width: 90%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.titulo {
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.menus {
+  display: inline;
+  gap: 1.5rem;
+  display: inline;
+}
+
+.github {
+  font-weight: 600;
+}
+
+
+
+.principal {
+  background-color: #F6F9FF;
+}
+
+.hero {
+  max-width: 1920px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding: 0rem 0rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.hero-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.destaque {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 900;
+}
+
+/* Defina a largura inicial da borda */
+hr {
+  border-width: 20px;
+  border-style: solid;
+  animation: changeColor 5s infinite alternate;
+  /* Animação para mudar a cor */
+}
+
+/* Defina as cores que deseja que o hr passe */
+@keyframes changeColor {
+  0% {
+    border-color: #00ffff;
+  }
+
+  25% {
+    border-color: #1100ff;
+  }
+
+  50% {
+    border-color: #ff00b3;
+  }
+
+  75% {
+    border-color: #0000ff;
+  }
+
+  100% {
+    border-color: #ffff00;
+  }
+}
+
+.hero-sub {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-img {
+  left: 20%;
+  text-align: center;
+  font-size: 18px;
+  background: #F6F9FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  margin: 10%;
+}
+
+.hero-img>figure>img {
+  width: 900%;
+  border-radius: 0.5rem;
+}
+
+.imagem {
+  width: 900%;
+  max-width: 1120px;
+  padding: 1rem;
+  margin: auto;
+  transform: translateY(70%);
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.linguagens {
+  display: flex;
+  flex-direction: column;
+  max-width: 1120px;
+  padding: 3rem 2rem;
+  margin: auto;
+}
+
+.linguagens-cabechalho {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.linguagens-titulo {
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+}
+
+.linguagens-subtitulo {
+  font-family: 'Teko', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.card {
+  padding: 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+  background-color: #ffffff;
+  border: 0;
+}
+
+.card-item {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-basis: calc(150% - 1rem);
+  /* Define a largura de cada card como metade da largura total, subtraindo o espaço entre eles */
+  margin-top: 2rem;
+}
+
+.card-cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.emalta {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.javascript {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.imagem-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imagem-5>img {
+  border-radius: 20rem;
+  width: 1.5rem;
+}
+
+.face {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.tcl {
+  padding: -1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50;
+  /* Removendo o espaçamento entre os elementos */
+  background-color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+  border-radius: 0.5rem;
+}
+
+.tcl-auto {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  border-radius: 0.5rem;
+
+}
